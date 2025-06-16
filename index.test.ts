@@ -1,8 +1,8 @@
-import { expect, test } from 'vitest'
-import { hello } from './index'
+import { expect, test } from "vitest";
+import { hello } from "./frontend/index";
 
-test('', () => {
-    const result = hello();
-    expect(result === null).toBe(false);
-    console.log(`Message:${result}`);
-})
+test("", async () => {
+	const result = await hello();
+	console.log(result.text);
+	expect(result.text).toBe('HelloWorld');
+});

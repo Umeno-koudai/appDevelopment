@@ -3,6 +3,17 @@ version: 2.1
 orbs:
   test: vitest
 
+jobs:
+  test-job:
+    steps:
+      - run:
+          name: Run test
+          command: |
+             npm run test
+             
+    
+  deploy-job:
+
 workflows:
   mny_workflow:
     jobs:

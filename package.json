@@ -1,16 +1,21 @@
 {
-  "name": "ci-test",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "vitest",
-    "start": "node server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "vitest": "^3.2.3"
-  }
+	"name": "ci-test",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"test": "vitest",
+		"start": "node server.js",
+		"check": "biome check --write"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"vitest": "^3.2.3"
+	},
+	"dependencies": {
+		"typescript": "^5.8.3"
+	}
 }
