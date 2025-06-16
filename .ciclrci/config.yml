@@ -1,0 +1,10 @@
+version: 2.1
+
+orbs:
+  test: vitest
+
+workflows:
+  mny_workflow:
+    jobs:
+      - test:
+          dir: ./index.test.ts
