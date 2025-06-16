@@ -1,0 +1,11 @@
+version: 2.1
+
+orbs:
+  shellcheck: circleci/shellcheck@2.2.4
+
+workflows:
+  mny_workflow:
+    jobs: # この'jobs:'は'mny_workflow:'より2スペース多くインデントされています
+      - shellcheck/check: # ハイフンの後に1スペース。'jobs:'より2スペース多くインデントされています。
+          dir: ./ # この'dir:'は'- shellcheck/check:'より2スペース多くインデントされています。
+          pattern: '*.sh' # この'pattern:'は'- shellcheck/check:'より2スペース多くインデントされています。
